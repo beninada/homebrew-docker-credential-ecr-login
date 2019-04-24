@@ -23,15 +23,4 @@ class DockerCredentialEcrLogin < Formula
       bin.install 'bin/local/docker-credential-ecr-login'
     end
   end
-
-  def caveats
-    <<-EOS.undent
-      Set the contents of your ~/.docker/config.json file to be:
-
-      {
-          "credsStore": "ecr-login"
-      }
-
-    EOS
-  end
 end
